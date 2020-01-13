@@ -78,25 +78,28 @@ title.textContent = "Dogs are amazing!";
 
 
 // Step 7: classList manipulation, we will remove a class called ".extra-stuff" from our DOM.
-
 // // Note that classList returns a DOMTokenList which gives us some unique methods.
-
+const lastCard = document.querySelector('.extra-stuff');
+lastCard.classList.remove('extra-stuff');
 
 
 // Step 8: Creating new DOM elements in JS only
-
 // Creating a new element, adding content, and adding it to browser
-
 // Item Creation Step 1: create a new element
-
-
+const newContent = document.createElement('footer');
 
 // Item Creation Step 2: add some content to the newly created div
-
-
+newContent.textContent = "Website made by Christina Gorton";
+newContent.classList.add('footer');
 
 // Item Creation Step 3: prepend or append the element to an existing DOM node on the page
+// in order to append/prepend you must grab the element first
+const parentElement = document.querySelector("body");
+// prepend sends it to the top of the element
+// parentElement.prepend(newContent);
 
+// append sends it to the bottom
+parentElement.append(newContent);
 
 
 
