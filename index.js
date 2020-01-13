@@ -5,8 +5,10 @@
 // - Any valid ID will work
 // - No need for the # CSS selector, just the name of the ID
 // */
+const logoTitle = document.getElementById('logo-title');
 
-
+console.log(logoTitle);
+console.dir(logoTitle);
 
 // Always log the result to showcase the element is indeed what you thought it was.
 
@@ -14,7 +16,9 @@
 // - Any valid CSS selector will work but you MUST use the selector for the argument
 // - Be careful to mention that it finds the FIRST matching selection.  This can be an issue of developers forget and have multiple class names.
 // */
+const firstTitle = document.querySelector('.card-title');
 
+console.log(firstTitle);
 
 // Step 2: Review methods that return a multiple selections in the form of a HTMLCollection
 
