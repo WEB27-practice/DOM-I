@@ -21,15 +21,17 @@ const firstTitle = document.querySelector('.card-title');
 console.log(firstTitle);
 
 // Step 2: Review methods that return a multiple selections in the form of a HTMLCollection
+const links = document.getElementsByTagName('a');
+console.log(links);
 
+const menuItem = document.getElementsByClassName('menu-item');
+console.log(menuItem);
 // Note that you must show the true console in your browser window because the result will be a HTMLCollection and is too large for codepen.
-
-
 // You can target specific elements by using the array-like syntax of a HTMLCollection
 
-
 // Step 3: Review methods that return a multiple selections in the form of a NodeList
-
+const cardTitle = document.querySelectorAll('.card-title');
+console.log(cardTitle);
 
 // Step 4: Talk about the differences between HTMLCollection and NodeList by showing a HTMLCollection and a NodeList on top of each other in the console.  Point out that HTMLCollections are faster by their nature but that NodeLists allow for the use of forEach() without converting to an Array.
 
