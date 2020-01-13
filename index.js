@@ -65,6 +65,13 @@ Array.from(links).forEach((link) => {
     link.textContent = "These are arrays!"
 })
 
+const dogImg = document.querySelector('.card-img-top');
+dogImg.src = 'https://images.unsplash.com/photo-1499789853431-fcbf274f57b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ';
+dogImg.alt = 'Bestest boy in a field';
+
+const title = document.querySelector('h2');
+title.textContent = "Dogs are amazing!";
+
 // Step 6: DOM Style
 //  anything with a - needs to be camel cased.  eg: background-color should be style.backgroundColor
 
