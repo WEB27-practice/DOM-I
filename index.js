@@ -30,8 +30,8 @@ console.log(menuItem);
 // You can target specific elements by using the array-like syntax of a HTMLCollection
 
 // Step 3: Review methods that return a multiple selections in the form of a NodeList
-const cardTitle = document.querySelectorAll('.card-title');
-console.log(cardTitle);
+// const cardTitle = document.querySelectorAll('.card-title');
+// console.log(cardTitle);
 
 // Step 4: Talk about the differences between HTMLCollection and NodeList by showing a HTMLCollection and a NodeList on top of each other in the console.  Point out that HTMLCollections are faster by their nature but that NodeLists allow for the use of forEach() without converting to an Array.
 
@@ -43,8 +43,27 @@ console.log(cardTitle);
 // // getElementsbyClassName;
 
 
-// // Step 5: DOM manipulation
+// Step 5: DOM manipulation
+// for loop
+// const cardTitles = document.getElementsByClassName('card-title');
+// console.log(cardTitles);
+// for(let i = 0; i < cardTitles.length; i ++) {
+//     cardTitles[i].style.color = "silver";
+// }
 
+// using forEach
+const cardTitles = document.querySelectorAll('.card-title');
+cardTitles.forEach(element => {
+    element.style.color = "blue";
+})
+
+// Turning an HTMLcollection into an Array
+// Array.from takes a nodelist and turns it into an array for you to forEach or loop over
+Array.from(links).forEach((link) => {
+    // do something
+    link.style.color = 'hotpink'
+    link.textContent = "These are arrays!"
+})
 
 // Step 6: DOM Style
 //  anything with a - needs to be camel cased.  eg: background-color should be style.backgroundColor
